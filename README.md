@@ -11,8 +11,8 @@ A small, fast, dependency-free link-in-bio page for **Lindsey (Xiaoling) Zhou**,
 | `index.html` | Markup, inline brand SVGs, OpenGraph/Twitter meta, `Person` JSON-LD |
 | `styles.css` | Palette, layout, animations, light/dark themes |
 | `script.js` | Theme toggle, WeChat copy-to-clipboard, Web Share |
-| `assets/avatar.jpg` | Profile picture |
-| `assets/favicon.svg` | Sunflower favicon |
+| `assets/avatar.png` | Profile picture |
+| `assets/favicon.svg` | Monogram favicon |
 
 No build step, no framework, no external JS. The only network dependency is Google Fonts
 (Fraunces + Inter), and the page degrades to system fonts if that fails.
@@ -36,13 +36,13 @@ No build step, no framework, no external JS. The only network dependency is Goog
 
 ## Palette
 
-Colours are pulled from the sunflower bouquet in the profile photo — sunflower gold
-`#f6b21b`, carnation pink `#f08fb0`, leaf green `#5a9367`.
+Colours are pulled from the profile photo — caramel `#d59a55`, dusty rose `#d78e9e`,
+olive `#7c8f6b`.
 
 ## Editing
 
 Change a link or handle in `index.html` (each is one `<a class="link">` block). To swap the
-profile picture, replace `assets/avatar.jpg` with a square image (400×400 or larger).
+profile picture, replace `assets/avatar.png` with a square image (400×400 or larger).
 
 ## Local preview
 
