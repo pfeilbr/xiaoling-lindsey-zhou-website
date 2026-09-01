@@ -307,6 +307,7 @@ body {
 .link[data-brand="linkedin"] { --brand: #0a66c2; }
 .link[data-brand="x"]        { --brand: #8a8f98; }
 .link[data-brand="facebook"] { --brand: #1877f2; }
+.link[data-brand="instagram"] { --brand: #e1306c; }
 .link[data-brand="wechat"]   { --brand: #09b83e; }
 
 [data-theme="dark"] .link[data-brand="x"] { --brand: #d8dbe0; }

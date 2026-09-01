@@ -21,6 +21,7 @@ No build step, no framework, no external JS. The only network dependency is Goog
 
 - LinkedIn — `in/xiaolingzhou`
 - X (Twitter) — `@lindsey7926`
+- Instagram — `@lindsey.zhou`
 - Facebook — `lingling.zhou.96`
 - WeChat — `ACL-beauty` (tap to copy; WeChat has no profile URL scheme)
 
