@@ -208,57 +208,6 @@ body {
   letter-spacing: .01em;
 }
 
-.tagline {
-  margin: 1rem 0 0;
-  font-size: 1.06rem;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: .45rem;
-}
-
-.tagline__emoji {
-  display: inline-block;
-  animation: wiggle 3.6s var(--ease) infinite;
-  transform-origin: 70% 70%;
-}
-
-@keyframes wiggle {
-  0%, 62%, 100% { transform: none; }
-  70% { transform: rotate(-13deg) scale(1.14); }
-  78% { transform: rotate(11deg)  scale(1.14); }
-  86% { transform: rotate(-7deg)  scale(1.08); }
-}
-
-.badges { margin-top: 1.35rem; }
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: .55rem;
-  padding: .42rem .85rem;
-  border-radius: 999px;
-  font-size: .8rem;
-  color: var(--muted);
-  background: var(--surface);
-  border: 1px solid var(--stroke);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.dot {
-  width: .5rem; height: .5rem;
-  border-radius: 50%;
-  background: var(--green-2);
-  box-shadow: 0 0 0 0 color-mix(in srgb, var(--green-2) 70%, transparent);
-  animation: pulse 2.4s ease-out infinite;
-}
-
-@keyframes pulse {
-  70%  { box-shadow: 0 0 0 .5rem transparent; }
-  100% { box-shadow: 0 0 0 0 transparent; }
-}
-
 /* ---------- links ---------- */
 
 .links {
