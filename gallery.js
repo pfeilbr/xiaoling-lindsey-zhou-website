@@ -82,7 +82,20 @@
       const poster = it.poster ? ` poster="${BASE + it.poster}"` : "";
       lbMedia.innerHTML = `<video src="${src}"${poster} controls autoplay playsinline></video>`;
     } else {
-      lbMedia.innerHTML = `<img src="${src}" alt="${(it.alt || "").replace(/"/g, "&quot;")}">`;
+      // the grid thumbnail is already cached, so show it instantly and swap in
+      // the full image once it decodes — avoids a blank frame on slow connections
+      const alt = (it.alt || "").replace(/"/g, "&quot;");
+      const thumb = BASE + (it.thumb || it.src);
+      lbMedia.innerHTML = `<img class="lb-img is-loading" src="${thumb}" alt="${alt}">`;
+      const el = lbMedia.firstElementChild;
+      const full = new Image();
+      full.decoding = "async";
+      full.onload = () => {
+        if (!lbMedia.contains(el)) return;   // visitor already moved on
+        el.src = full.src;
+        el.classList.remove("is-loading");
+      };
+      full.src = src;
     }
     lbCaption.textContent = it.caption || it.alt || "";
   };

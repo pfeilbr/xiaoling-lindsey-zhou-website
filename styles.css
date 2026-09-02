@@ -1097,3 +1097,13 @@ html[lang^="zh"] .cta__kicker { letter-spacing: .08em; }
 .prose a:hover { color: var(--gold-2); border-bottom-color: var(--gold); }
 [data-theme="light"] .prose a:hover { color: #a8702a; }
 .prose a:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 2px; border-radius: 3px; }
+
+/* full image fades in over the cached thumbnail */
+.lb-img {
+  transition: filter .35s var(--ease);
+}
+
+.lb-img.is-loading {
+  filter: blur(12px);
+  transform: scale(1.02);
+}
