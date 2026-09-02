@@ -23,8 +23,8 @@
       "about.birthday":  "Lunar birthday · September 3, 2026",
       "about.lives":     "Lives in Willow Grove, Pennsylvania",
       "about.family":    "Divorced mom of 2 wonderful daughters",
-      "about.ms":        "MS Statistics · Texas Tech University · 2009–2011",
-      "about.bs":        "BS Materials Science & Engineering · Chongqing University · 1998–2002",
+      "about.ms":        "MS Statistics · Texas Tech University",
+      "about.bs":        "BS Materials Science & Engineering · Chongqing University",
 
       "cta.kicker":      "Photo album",
       "cta.title":       "See all 176 photos & videos",
@@ -90,8 +90,8 @@
       "about.birthday":  "农历生日 · 2026年9月3日",
       "about.lives":     "现居美国宾夕法尼亚州威洛格罗夫",
       "about.family":    "离异，育有两个可爱的女儿",
-      "about.ms":        "统计学硕士 · 德州理工大学 · 2009–2011",
-      "about.bs":        "材料科学与工程学士 · 重庆大学 · 1998–2002",
+      "about.ms":        "统计学硕士 · 德州理工大学",
+      "about.bs":        "材料科学与工程学士 · 重庆大学",
 
       "cta.kicker":      "相册",
       "cta.title":       "查看全部 176 张照片和视频",
