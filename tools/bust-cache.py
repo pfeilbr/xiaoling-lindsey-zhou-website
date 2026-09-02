@@ -19,7 +19,8 @@ def digest(name: str) -> str:
 PAGES = {"index.html": ["styles.css", "i18n.js", "script.js"],
          "gallery.html": ["styles.css", "i18n.js", "gallery.js"],
          "about.html": ["styles.css", "i18n.js", "page.js"],
-         "story.html": ["styles.css", "i18n.js", "page.js"]}
+         "story.html": ["styles.css", "i18n.js", "page.js"],
+         "404.html": ["styles.css", "i18n.js", "page.js"]}
 
 for page, assets in PAGES.items():
     p = ROOT / page

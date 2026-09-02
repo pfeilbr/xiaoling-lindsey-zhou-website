@@ -7,6 +7,9 @@
 
   const DICT = {
     en: {
+      "doc.title.404":     "Page not found — Lindsey Zhou",
+      "e404.title":      "Page not found",
+      "e404.lede":       "That link has moved, or never existed. The pages above all still work.",
       "doc.title.about":   "About — Xiaoling (Lindsey) Zhou",
       "doc.title.story":   "My Story — Xiaoling (Lindsey) Zhou",
       "nav.links":       "Links",
@@ -107,6 +110,9 @@
     },
 
     zh: {
+      "doc.title.404":     "\u9875\u9762\u672a\u627e\u5230 \u2014 \u5468\u6653\u73b2",
+      "e404.title":      "\u9875\u9762\u672a\u627e\u5230",
+      "e404.lede":       "\u8fd9\u4e2a\u94fe\u63a5\u5df2\u7ecf\u53d8\u4e86\uff0c\u6216\u8005\u4ece\u672a\u5b58\u5728\u3002\u4e0a\u9762\u7684\u9875\u9762\u90fd\u53ef\u4ee5\u7528\u3002",
       "doc.title.about":   "\u5173\u4e8e \u2014 \u5468\u6653\u73b2",
       "doc.title.story":   "\u6211\u7684\u6545\u4e8b \u2014 \u5468\u6653\u73b2",
       "nav.links":       "\u94fe\u63a5",
