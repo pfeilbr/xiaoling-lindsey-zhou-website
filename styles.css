@@ -939,3 +939,29 @@ html[lang^="zh"] .cta__kicker { letter-spacing: .08em; }
 }
 
 .likes__emoji { font-size: .95rem; line-height: 1; }
+
+.origin {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+}
+
+.origin__pin {
+  display: inline-grid;
+  place-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--gold-2);
+  transition: transform .25s var(--ease), color .25s var(--ease);
+}
+
+[data-theme="light"] .origin__pin { color: #b07a2c; }
+
+.origin__pin svg {
+  width: 100%; height: 100%;
+  fill: none; stroke: currentColor;
+  stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.origin__pin:hover { transform: translateY(-2px) scale(1.1); color: var(--gold); }
+.origin__pin:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 2px; border-radius: 4px; }
