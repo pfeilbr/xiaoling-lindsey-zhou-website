@@ -965,3 +965,12 @@ html[lang^="zh"] .cta__kicker { letter-spacing: .08em; }
 
 .origin__pin:hover { transform: translateY(-2px) scale(1.1); color: var(--gold); }
 .origin__pin:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 2px; border-radius: 4px; }
+
+.about li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .3rem;
+}
+
+.about__emoji { font-size: .9rem; line-height: 1; }
