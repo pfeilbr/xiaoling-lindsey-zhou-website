@@ -22,6 +22,7 @@
   --orb-op:    .5;
   --grain-op:  .035;
   --toast-bg:  #262019;
+  --cta-bg:    #1d1815;
 
   --radius: 18px;
   --ease: cubic-bezier(.22, 1, .36, 1);
@@ -40,6 +41,7 @@
   --orb-op:    .42;
   --grain-op:  .05;
   --toast-bg:  #fffcf7;
+  --cta-bg:    #fffaf3;
 }
 
 * { box-sizing: border-box; }
@@ -669,4 +671,142 @@ body {
   .lb-prev { left: .4rem; }
   .lb-next { right: .4rem; }
   .lb-btn { width: 2.5rem; height: 2.5rem; }
+}
+
+/* ---------- photo album call to action ---------- */
+
+.cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: .95rem;
+  margin: 2rem 0 .35rem;
+  padding: .8rem .95rem;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(var(--cta-bg), var(--cta-bg)) padding-box,
+    linear-gradient(115deg, var(--gold), var(--pink) 45%, var(--green-2)) border-box;
+  border: 1.5px solid transparent;
+  box-shadow: var(--shadow);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+
+/* warm wash so the card reads as the primary action, not another row */
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(115deg,
+    color-mix(in srgb, var(--gold) 13%, transparent),
+    color-mix(in srgb, var(--pink) 9%, transparent) 55%,
+    transparent);
+}
+
+/* light sweep on hover */
+.cta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -60%;
+  width: 45%;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.16), transparent);
+  transform: skewX(-18deg);
+  transition: left .65s var(--ease);
+}
+
+@media (hover: hover) {
+  .cta:hover { transform: translateY(-3px); }
+  .cta:hover::after { left: 115%; }
+  .cta:hover .cta__go { transform: translateX(3px); }
+  .cta:hover .cta__peek img:first-child { transform: rotate(-9deg) translateX(-2px); }
+  .cta:hover .cta__peek img:last-child  { transform: rotate(9deg) translateX(2px); }
+}
+
+.cta:active { transform: translateY(-1px) scale(.995); }
+.cta:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 3px; }
+
+/* fanned stack of preview frames */
+.cta__peek {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding-left: .5rem;
+}
+
+.cta__peek img {
+  width: 2.5rem;
+  height: 3.1rem;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--bg);
+  margin-left: -1.05rem;
+  box-shadow: 0 4px 12px -4px rgba(0,0,0,.6);
+  transition: transform .35s var(--ease);
+}
+
+.cta__peek img:nth-child(1) { transform: rotate(-6deg); z-index: 1; }
+.cta__peek img:nth-child(2) { transform: rotate(-2deg); z-index: 2; }
+.cta__peek img:nth-child(3) { transform: rotate(2deg);  z-index: 3; }
+.cta__peek img:nth-child(4) { transform: rotate(6deg);  z-index: 4; }
+
+.cta__body {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .12rem;
+}
+
+.cta__kicker {
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gold-2);
+}
+
+[data-theme="light"] .cta__kicker { color: #a8702a; }
+
+.cta__title {
+  font-family: Fraunces, ui-serif, Georgia, serif;
+  font-weight: 700;
+  font-size: 1.12rem;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+}
+
+.cta__sub {
+  font-size: .8rem;
+  color: color-mix(in srgb, var(--text) 68%, transparent);
+}
+
+.cta__go {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold), var(--pink));
+  color: #2a1c0c;
+  transition: transform .3s var(--ease);
+}
+
+.cta__go svg {
+  width: 1.05rem; height: 1.05rem;
+  fill: none; stroke: currentColor;
+  stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+@media (max-width: 24rem) {
+  .cta__peek img { width: 2.1rem; height: 2.6rem; }
+  .cta__title { font-size: 1rem; }
 }
