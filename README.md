@@ -85,3 +85,45 @@ Then open http://localhost:8000.
 
 GitHub Pages serves the `main` branch root. Pushing to `main` publishes.
 `.nojekyll` is present so Jekyll doesn't process the files.
+
+## Custom domain and HTTPS
+
+`CNAME` points the site at `lindseyzhou.com`. GitHub Pages issues and renews a
+**Let's Encrypt** certificate for that domain automatically — there is no certificate
+to commit here, and nothing to renew by hand.
+
+Two things have to be true for it to work:
+
+**1. DNS points at GitHub Pages.** The apex needs four `A` records, and ideally the four
+matching `AAAA` records for IPv6:
+
+```
+A     @   185.199.108.153
+A     @   185.199.109.153
+A     @   185.199.110.153
+A     @   185.199.111.153
+AAAA  @   2606:50c0:8000::153
+AAAA  @   2606:50c0:8001::153
+AAAA  @   2606:50c0:8002::153
+AAAA  @   2606:50c0:8003::153
+```
+
+The domain must resolve straight to those addresses. If it is proxied through a CDN
+(Cloudflare's orange cloud, say), GitHub cannot complete the ACME challenge and the
+certificate never issues.
+
+**2. HTTPS is enforced.** In **Settings → Pages**, tick **Enforce HTTPS**. That is what
+serves the Let's Encrypt certificate and 301s `http://` to `https://`.
+
+If **Enforce HTTPS** is greyed out, the certificate has not been issued yet. Clear the
+custom domain field, save, put `lindseyzhou.com` back, and save again — that re-triggers
+issuance. It usually takes a few minutes and can take up to an hour.
+
+To check what is actually being served:
+
+```bash
+curl -sv https://lindseyzhou.com/ 2>&1 | grep -E 'subject:|issuer:'
+```
+
+`subject: CN=lindseyzhou.com` means the certificate is live. `subject: CN=*.github.io`
+means it is not — GitHub is still falling back to its default wildcard.
