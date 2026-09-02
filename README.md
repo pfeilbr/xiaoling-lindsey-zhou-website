@@ -115,9 +115,18 @@ certificate never issues.
 **2. HTTPS is enforced.** In **Settings → Pages**, tick **Enforce HTTPS**. That is what
 serves the Let's Encrypt certificate and 301s `http://` to `https://`.
 
-If **Enforce HTTPS** is greyed out, the certificate has not been issued yet. Clear the
-custom domain field, save, put `lindseyzhou.com` back, and save again — that re-triggers
-issuance. It usually takes a few minutes and can take up to an hour.
+**Enforce HTTPS** stays greyed out until the certificate exists, so the order is always
+DNS check -> certificate -> checkbox. Read the status line under the domain field before
+touching anything:
+
+- **DNS Check in Progress** (yellow) — GitHub is still verifying. Issuance has not started
+  yet, and the greyed-out checkbox is just a symptom of that. Wait. Removing and re-adding
+  the domain here restarts the check and makes it slower, not faster.
+- **DNS check successful** (green), but the checkbox is still greyed out an hour later —
+  now issuance is genuinely stuck. Clear the custom domain field, save, put
+  `lindseyzhou.com` back, and save again to re-trigger it.
+
+The whole sequence usually finishes in a few minutes and can take up to 24 hours.
 
 To check what is actually being served:
 
