@@ -24,7 +24,7 @@ THUMBS = GAL / "thumbs"
 
 IMG_EXT = {".jpg", ".jpeg", ".png", ".webp", ".heic", ".gif"}
 VID_EXT = {".mp4", ".mov", ".m4v", ".webm"}
-THUMB_W = 800
+THUMB_W = 480
 
 
 def thumb_for(src: pathlib.Path) -> tuple[str, int, int]:
@@ -37,7 +37,7 @@ def thumb_for(src: pathlib.Path) -> tuple[str, int, int]:
             im = im.convert("RGB")
         if w > THUMB_W:
             im = im.resize((THUMB_W, round(h * THUMB_W / w)), Image.LANCZOS)
-        im.save(out, "JPEG", quality=82, optimize=True, progressive=True)
+        im.save(out, "JPEG", quality=78, optimize=True, progressive=True)
     return f"thumbs/{out.name}", w, h
 
 
