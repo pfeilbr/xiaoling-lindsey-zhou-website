@@ -2,7 +2,7 @@
 
 A small, fast, dependency-free link-in-bio page for **Lindsey (Xiaoling) Zhou**, hosted on GitHub Pages.
 
-**Live:** https://pfeilbr.github.io/xiaoling-lindsey-zhou-website/
+**Live:** https://lindseyzhou.com/
 
 ## What's here
 

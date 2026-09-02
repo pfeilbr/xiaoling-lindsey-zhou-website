@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pfeilbr.github.io/xiaoling-lindsey-zhou-website/sitemap.xml
+Sitemap: https://lindseyzhou.com/sitemap.xml
