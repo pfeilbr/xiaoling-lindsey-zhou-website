@@ -483,6 +483,7 @@ body {
 
 .link[data-brand="mail"]  { --brand: #c87a3c; }
 .link[data-brand="phone"] { --brand: #6f8a5e; }
+.link[data-brand="photos"] { --brand: #b98ad0; }
 
 /* ---------- gallery ---------- */
 

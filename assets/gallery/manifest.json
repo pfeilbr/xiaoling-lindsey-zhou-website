@@ -1,4 +1,305 @@
 {
-  "album": "",
-  "items": []
+  "album": "Belmar Beach, July 2026",
+  "items": [
+    {
+      "type": "photo",
+      "src": "photos/IMG_1655.jpg",
+      "thumb": "thumbs/IMG_1655.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1655"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1657.jpg",
+      "thumb": "thumbs/IMG_1657.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1657"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1658.jpg",
+      "thumb": "thumbs/IMG_1658.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1658"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1659.jpg",
+      "thumb": "thumbs/IMG_1659.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1659"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1660.jpg",
+      "thumb": "thumbs/IMG_1660.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1660"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1661.jpg",
+      "thumb": "thumbs/IMG_1661.jpg",
+      "w": 2400,
+      "h": 1800,
+      "alt": "IMG_1661"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1666.jpg",
+      "thumb": "thumbs/IMG_1666.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1666"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1667.jpg",
+      "thumb": "thumbs/IMG_1667.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1667"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1668.jpg",
+      "thumb": "thumbs/IMG_1668.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1668"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1669.jpg",
+      "thumb": "thumbs/IMG_1669.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1669"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1670.jpg",
+      "thumb": "thumbs/IMG_1670.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1670"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1671.jpg",
+      "thumb": "thumbs/IMG_1671.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1671"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1672.jpg",
+      "thumb": "thumbs/IMG_1672.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1672"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1674.jpg",
+      "thumb": "thumbs/IMG_1674.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1674"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1676.jpg",
+      "thumb": "thumbs/IMG_1676.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1676"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1678.jpg",
+      "thumb": "thumbs/IMG_1678.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1678"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1679.jpg",
+      "thumb": "thumbs/IMG_1679.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1679"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1680.jpg",
+      "thumb": "thumbs/IMG_1680.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1680"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1681.jpg",
+      "thumb": "thumbs/IMG_1681.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1681"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1682.jpg",
+      "thumb": "thumbs/IMG_1682.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1682"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1683.jpg",
+      "thumb": "thumbs/IMG_1683.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1683"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1688.jpg",
+      "thumb": "thumbs/IMG_1688.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1688"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1689.jpg",
+      "thumb": "thumbs/IMG_1689.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1689"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1690.jpg",
+      "thumb": "thumbs/IMG_1690.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1690"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1691.jpg",
+      "thumb": "thumbs/IMG_1691.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1691"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1692.jpg",
+      "thumb": "thumbs/IMG_1692.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1692"
+    },
+    {
+      "type": "photo",
+      "src": "photos/IMG_1693.jpg",
+      "thumb": "thumbs/IMG_1693.jpg",
+      "w": 1800,
+      "h": 2400,
+      "alt": "IMG_1693"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1656.mp4",
+      "alt": "IMG_1656",
+      "poster": "thumbs/IMG_1656.jpg",
+      "thumb": "thumbs/IMG_1656.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1662.mp4",
+      "alt": "IMG_1662",
+      "poster": "thumbs/IMG_1662.jpg",
+      "thumb": "thumbs/IMG_1662.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1663.mp4",
+      "alt": "IMG_1663",
+      "poster": "thumbs/IMG_1663.jpg",
+      "thumb": "thumbs/IMG_1663.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1664.mp4",
+      "alt": "IMG_1664",
+      "poster": "thumbs/IMG_1664.jpg",
+      "thumb": "thumbs/IMG_1664.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1665.mp4",
+      "alt": "IMG_1665",
+      "poster": "thumbs/IMG_1665.jpg",
+      "thumb": "thumbs/IMG_1665.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1673.mp4",
+      "alt": "IMG_1673",
+      "poster": "thumbs/IMG_1673.jpg",
+      "thumb": "thumbs/IMG_1673.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1675.mp4",
+      "alt": "IMG_1675",
+      "poster": "thumbs/IMG_1675.jpg",
+      "thumb": "thumbs/IMG_1675.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1677.mp4",
+      "alt": "IMG_1677",
+      "poster": "thumbs/IMG_1677.jpg",
+      "thumb": "thumbs/IMG_1677.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1684.mp4",
+      "alt": "IMG_1684",
+      "poster": "thumbs/IMG_1684.jpg",
+      "thumb": "thumbs/IMG_1684.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1685.mp4",
+      "alt": "IMG_1685",
+      "poster": "thumbs/IMG_1685.jpg",
+      "thumb": "thumbs/IMG_1685.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1686.mp4",
+      "alt": "IMG_1686",
+      "poster": "thumbs/IMG_1686.jpg",
+      "thumb": "thumbs/IMG_1686.jpg"
+    },
+    {
+      "type": "video",
+      "src": "videos/IMG_1687.mp4",
+      "alt": "IMG_1687",
+      "poster": "thumbs/IMG_1687.jpg",
+      "thumb": "thumbs/IMG_1687.jpg"
+    }
+  ]
 }

@@ -45,10 +45,12 @@ def poster_for(src: pathlib.Path) -> str | None:
     if not shutil.which("ffmpeg"):
         return None
     out = THUMBS / (src.stem + ".jpg")
-    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-ss", "1", "-i", str(src),
-           "-frames:v", "1", "-vf", f"scale={THUMB_W}:-2", str(out)]
-    if subprocess.run(cmd).returncode == 0 and out.exists():
-        return f"thumbs/{out.name}"
+    # clips shorter than the seek point yield no frame, so fall back to the first one
+    for seek in ("1", "0"):
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-ss", seek, "-i", str(src),
+               "-frames:v", "1", "-vf", f"scale={THUMB_W}:-2", str(out)]
+        if subprocess.run(cmd).returncode == 0 and out.exists():
+            return f"thumbs/{out.name}"
     return None
 
 
