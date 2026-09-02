@@ -11,6 +11,10 @@ A small, fast, dependency-free link-in-bio page for **Lindsey (Xiaoling) Zhou**,
 | `index.html` | Markup, inline brand SVGs, OpenGraph/Twitter meta, `Person` JSON-LD |
 | `styles.css` | Palette, layout, animations, light/dark themes |
 | `script.js` | Theme toggle, WeChat copy-to-clipboard, Web Share |
+| `gallery.html` | Photo gallery page (grid + lightbox) |
+| `gallery.js` | Gallery rendering, lightbox, keyboard/swipe nav |
+| `assets/gallery/` | `photos/`, `videos/`, generated `thumbs/`, `manifest.json` |
+| `tools/build-gallery.py` | Builds thumbnails and the manifest |
 | `assets/avatar.png` | Profile picture |
 | `assets/favicon.svg` | Monogram favicon |
 
@@ -44,6 +48,21 @@ olive `#7c8f6b`.
 
 Change a link or handle in `index.html` (each is one `<a class="link">` block). To swap the
 profile picture, replace `assets/avatar.png` with a square image (400×400 or larger).
+
+## Adding photos to the gallery
+
+Drop full-size images into `assets/gallery/photos/` and videos into
+`assets/gallery/videos/`, then:
+
+```bash
+python3 tools/build-gallery.py --album "Belmar Beach, July 2026"
+```
+
+That writes width-limited thumbnails to `assets/gallery/thumbs/` and regenerates
+`assets/gallery/manifest.json` with dimensions, so the grid does not reflow as images
+load. Video posters are extracted with `ffmpeg` if it is installed.
+
+`gallery.html` is not linked from `index.html` yet — add a card once it has photos in it.
 
 ## Local preview
 
