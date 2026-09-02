@@ -39,6 +39,7 @@
 
       "share":           "Share this page",
       "footer":          "Made with ♥ for Lindsey",
+      "footer.by":       "by",
 
       "theme.toLight":   "Switch to light theme",
       "theme.toDark":    "Switch to dark theme",
@@ -96,6 +97,7 @@
 
       "share":           "分享此页面",
       "footer":          "用心为 Lindsey 制作 ♥",
+      "footer.by":       "作者",
 
       "theme.toLight":   "切换到浅色主题",
       "theme.toDark":    "切换到深色主题",
