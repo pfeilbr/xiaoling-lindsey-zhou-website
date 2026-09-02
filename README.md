@@ -55,7 +55,7 @@ Drop full-size images into `assets/gallery/photos/` and videos into
 `assets/gallery/videos/`, then:
 
 ```bash
-python3 tools/build-gallery.py --album "Belmar Beach, July 2026"
+python3 tools/build-gallery.py --album "Favorites"
 ```
 
 That writes width-limited thumbnails to `assets/gallery/thumbs/` and regenerates
