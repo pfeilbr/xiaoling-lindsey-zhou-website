@@ -64,6 +64,15 @@ load. Video posters are extracted with `ffmpeg` if it is installed.
 
 `gallery.html` is not linked from `index.html` yet — add a card once it has photos in it.
 
+## After editing CSS or JS
+
+Browsers cache `styles.css` hard, so a CSS-only deploy can leave visitors on the old
+file and a broken-looking page. Re-stamp the content hashes before committing:
+
+```bash
+python3 tools/bust-cache.py
+```
+
 ## Local preview
 
 ```bash
