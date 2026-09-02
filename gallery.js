@@ -5,6 +5,8 @@
   const root = document.documentElement;
   const STORAGE_KEY = "lz-theme";
 
+  const tr = (key, fallback) => (window.lzI18n ? window.lzI18n.t(key) : fallback) || fallback;
+
   /* ---------- theme (shared behaviour with the links page) ---------- */
 
   const prefersLight = window.matchMedia("(prefers-color-scheme: light)");
@@ -13,7 +15,9 @@
     root.dataset.theme = theme;
     const t = document.getElementById("theme-toggle");
     if (t) {
-      t.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+      const key = theme === "dark" ? "theme.toLight" : "theme.toDark";
+      t.dataset.i18nAria = key;
+      t.setAttribute("aria-label", tr(key, ""));
     }
   };
 
@@ -130,15 +134,19 @@
 
   /* ---------- load ---------- */
 
+  document.addEventListener("lz:lang", () => {
+    if (albumName.textContent) albumName.textContent = tr("gallery.album", albumName.textContent);
+  });
+
   fetch(BASE + "manifest.json", { cache: "no-cache" })
     .then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
     .then((data) => {
       items = Array.isArray(data.items) ? data.items : [];
-      if (data.album) albumName.textContent = data.album;
+      if (data.album) albumName.textContent = tr("gallery.album", data.album);
       render();
     })
     .catch(() => {
       empty.hidden = false;
-      empty.textContent = "Couldn't load the gallery.";
+      empty.textContent = tr("gallery.error", "Couldn't load the gallery.");
     });
 })();

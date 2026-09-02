@@ -16,8 +16,8 @@ def digest(name: str) -> str:
     return hashlib.md5((ROOT / name).read_bytes()).hexdigest()[:8]
 
 
-PAGES = {"index.html": ["styles.css", "script.js"],
-         "gallery.html": ["styles.css", "gallery.js"]}
+PAGES = {"index.html": ["styles.css", "i18n.js", "script.js"],
+         "gallery.html": ["styles.css", "i18n.js", "gallery.js"]}
 
 for page, assets in PAGES.items():
     p = ROOT / page

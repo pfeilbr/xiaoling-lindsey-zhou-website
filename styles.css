@@ -816,3 +816,46 @@ body {
   font-size: .84rem;
   color: var(--muted);
 }
+
+/* ---------- language toggle ---------- */
+
+.lang-toggle {
+  position: fixed;
+  top: max(1rem, env(safe-area-inset-top));
+  right: calc(max(1rem, env(safe-area-inset-right)) + 3.1rem);
+  z-index: 10;
+  min-width: 2.6rem;
+  height: 2.6rem;
+  padding: 0 .6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--stroke);
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text);
+  font: inherit;
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .3s var(--ease), border-color .3s var(--ease), background-color .3s var(--ease);
+}
+
+.lang-toggle:hover { transform: scale(1.06); border-color: var(--stroke-h); }
+.lang-toggle:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 3px; }
+
+/* Chinese renders taller than Latin at the same size */
+html[lang^="zh"] .name { letter-spacing: 0; }
+html[lang^="zh"] .cta__kicker { letter-spacing: .08em; }
+
+.about {
+  list-style: none;
+  margin: .55rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .18rem;
+  font-size: .8rem;
+  color: var(--muted);
+}

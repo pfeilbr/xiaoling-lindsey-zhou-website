@@ -5,6 +5,9 @@
   const root = document.documentElement;
   const STORAGE_KEY = "lz-theme";
 
+  // i18n.js may not have run yet; fall back to the English literal
+  const tr = (key, fallback) => (window.lzI18n ? window.lzI18n.t(key) : fallback) || fallback;
+
   /* ---------- theme ---------- */
 
   const prefersLight = window.matchMedia("(prefers-color-scheme: light)");
@@ -13,10 +16,9 @@
     root.dataset.theme = theme;
     const toggle = document.getElementById("theme-toggle");
     if (toggle) {
-      toggle.setAttribute(
-        "aria-label",
-        theme === "dark" ? "Switch to light theme" : "Switch to dark theme"
-      );
+      const key = theme === "dark" ? "theme.toLight" : "theme.toDark";
+      toggle.dataset.i18nAria = key;
+      toggle.setAttribute("aria-label", window.lzI18n ? window.lzI18n.t(key) : "");
     }
   };
 
@@ -77,11 +79,11 @@
       const value = btn.dataset.copy;
       const ok = await copyText(value);
       if (!ok) {
-        toast(`WeChat ID: ${value}`);
+        toast(tr("toast.wechatPlain", `WeChat ID: ${value}`));
         return;
       }
       btn.classList.add("is-copied");
-      toast(`WeChat ID copied — ${value}`);
+      toast(tr("toast.wechatCopied", `WeChat ID copied — ${value}`));
       setTimeout(() => btn.classList.remove("is-copied"), 2000);
     });
   });
@@ -93,8 +95,8 @@
   shareBtn?.addEventListener("click", async () => {
     const url = location.href;
     const data = {
-      title: "Lindsey Zhou — Links",
-      text: "Lindsey (Xiaoling) Zhou — all her links in one place.",
+      title: tr("share.title", "Lindsey Zhou — Links"),
+      text: tr("share.text", "Lindsey (Xiaoling) Zhou — all her links in one place."),
       url,
     };
 
@@ -107,6 +109,6 @@
       }
     }
 
-    toast((await copyText(url)) ? "Link copied to clipboard" : url);
+    toast((await copyText(url)) ? tr("toast.linkCopied", "Link copied to clipboard") : url);
   });
 })();
