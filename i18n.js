@@ -13,7 +13,9 @@
       "name":            "Lindsey Zhou",
       "altName":         "Xiaoling Zhou",
       "origin":          "From Chengdu, Sichuan, China",
+      "about.birthday":  "Lunar birthday · September 3, 2026",
       "about.lives":     "Lives in Belle Mead, New Jersey",
+      "about.family":    "Divorced mom of 2 wonderful daughters",
       "about.ms":        "MS Statistics · Texas Tech University · 2009–2011",
       "about.bs":        "BS Materials Science & Engineering · Chongqing University · 1998–2002",
 
@@ -71,7 +73,9 @@
       "name":            "周晓玲",
       "altName":         "Xiaoling Zhou",
       "origin":          "来自中国四川成都",
+      "about.birthday":  "农历生日 · 2026年9月3日",
       "about.lives":     "现居美国新泽西州贝尔米德",
+      "about.family":    "离异，育有两个可爱的女儿",
       "about.ms":        "统计学硕士 · 德州理工大学 · 2009–2011",
       "about.bs":        "材料科学与工程学士 · 重庆大学 · 1998–2002",
 
