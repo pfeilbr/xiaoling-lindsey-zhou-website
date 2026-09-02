@@ -810,3 +810,9 @@ body {
   .cta__peek img { width: 2.1rem; height: 2.6rem; }
   .cta__title { font-size: 1rem; }
 }
+
+.origin {
+  margin: .3rem 0 0;
+  font-size: .84rem;
+  color: var(--muted);
+}
