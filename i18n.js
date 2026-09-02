@@ -54,7 +54,7 @@
       "about.birthday":  "Birthday · September 3",
       "about.lives":     "Lives in Willow Grove, Pennsylvania",
       "about.lives.map": "Open Willow Grove, Pennsylvania in Google Maps",
-      "about.family":    "Divorced mom of 2 wonderful daughters",
+      "about.family":    "Mom of 2 wonderful daughters",
       "about.ms":        "MS Statistics · Texas Tech University",
       "about.bs":        "BS Materials Science & Engineering · Chongqing University",
 
@@ -153,7 +153,7 @@
       "about.birthday":  "生日 · 9月3日",
       "about.lives":     "现居美国宾夕法尼亚州威洛格罗夫",
       "about.lives.map": "在谷歌地图中查看威洛格罗夫",
-      "about.family":    "离异，育有两个可爱的女儿",
+      "about.family":    "育有两个可爱的女儿",
       "about.ms":        "统计学硕士 · 德州理工大学",
       "about.bs":        "材料科学与工程学士 · 重庆大学",
 
