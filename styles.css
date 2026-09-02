@@ -908,3 +908,34 @@ html[lang^="zh"] .cta__kicker { letter-spacing: .08em; }
   84% { transform: rotate(10deg) scale(1.12); }
   92% { transform: rotate(-5deg) scale(1.05); }
 }
+
+.likes {
+  list-style: none;
+  margin: .8rem 0 .1rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .4rem;
+}
+
+.likes li {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .3rem .7rem;
+  border-radius: 999px;
+  font-size: .78rem;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform .25s var(--ease), border-color .25s var(--ease);
+}
+
+@media (hover: hover) {
+  .likes li:hover { transform: translateY(-2px); border-color: var(--stroke-h); }
+}
+
+.likes__emoji { font-size: .95rem; line-height: 1; }
