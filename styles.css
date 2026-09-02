@@ -869,3 +869,13 @@ html[lang^="zh"] .cta__kicker { letter-spacing: .08em; }
 
 .foot__by:hover { border-bottom-color: var(--gold); }
 .foot__by:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 2px; }
+
+.about__link {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--gold) 40%, transparent);
+  transition: border-color .25s var(--ease);
+}
+
+.about__link:hover { border-bottom-color: var(--gold); }
+.about__link:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 2px; }
