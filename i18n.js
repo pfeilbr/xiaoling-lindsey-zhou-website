@@ -12,6 +12,7 @@
 
       "name":            "Lindsey Zhou",
       "altName":         "Xiaoling Zhou",
+      "tagline":         "Spicy Sichuan girl",
       "origin":          "From Chengdu, Sichuan, China",
       "about.work":      "AT Prep · Great Neck, New York",
       "about.birthday":  "Lunar birthday · September 3, 2026",
@@ -73,6 +74,7 @@
 
       "name":            "周晓玲",
       "altName":         "Xiaoling Zhou",
+      "tagline":         "四川辣妹子",
       "origin":          "来自中国四川成都",
       "about.work":      "AT Prep · 纽约州大颈镇",
       "about.birthday":  "农历生日 · 2026年9月3日",

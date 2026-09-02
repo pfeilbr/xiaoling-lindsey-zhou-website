@@ -879,3 +879,32 @@ html[lang^="zh"] .cta__kicker { letter-spacing: .08em; }
 
 .about__link:hover { border-bottom-color: var(--gold); }
 .about__link:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 2px; }
+
+.tagline-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin: .9rem 0 .2rem;
+  padding: .35rem .85rem;
+  border-radius: 999px;
+  font-size: .88rem;
+  font-weight: 600;
+  color: var(--text);
+  background: linear-gradient(115deg,
+    color-mix(in srgb, var(--gold) 20%, transparent),
+    color-mix(in srgb, var(--pink) 16%, transparent));
+  border: 1px solid color-mix(in srgb, var(--gold) 38%, transparent);
+}
+
+.tagline-pill__emoji {
+  display: inline-block;
+  animation: pepper 4s var(--ease) infinite;
+  transform-origin: 60% 80%;
+}
+
+@keyframes pepper {
+  0%, 70%, 100% { transform: none; }
+  76% { transform: rotate(-12deg) scale(1.15); }
+  84% { transform: rotate(10deg) scale(1.12); }
+  92% { transform: rotate(-5deg) scale(1.05); }
+}
